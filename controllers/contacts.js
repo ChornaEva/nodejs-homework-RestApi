@@ -29,7 +29,6 @@ const deletContactById = async (req, res) => {
   }
   res.json({ message: "contact deleted" });
 };
-
 const updateContactById = async (req, res) => {
   const { contactId } = req.params;
   const updatedContact = await contacts.updateContact(contactId, req.body);
